@@ -77,7 +77,7 @@ async def send_dp(update: Update, context: CallbackContext):
     await update.message.reply_photo(profile.profile_pic_url)
 
 def main():
-    BOT_TOKEN = '7291500697:AAF0-uQTyDBh20UZ6GfqLfDOv2ERQEmNZX8'
+    BOT_TOKEN = 'YOUR_TOKEN'
     application = ApplicationBuilder().token(BOT_TOKEN).build()
 
     application.add_handler(CommandHandler('start', start))
